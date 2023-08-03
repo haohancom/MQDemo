@@ -6,7 +6,7 @@ import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
-import static com.example.MQDemo.config.QueueConfig.QUEUE_NAME;
+import static com.example.MQDemo.config.ExchangeQueueConfig.QUEUE_NAME;
 
 @Slf4j
 @Component

@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.UUID;
 
-import static com.example.MQDemo.config.QueueConfig.EXCHANGE_NAME;
-import static com.example.MQDemo.config.QueueConfig.ROUTING_KEY;
+import static com.example.MQDemo.config.ExchangeQueueConfig.EXCHANGE_NAME;
+import static com.example.MQDemo.config.ExchangeQueueConfig.ROUTING_KEY;
 
 @Slf4j
 @Controller

@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class QueueConfig {
+public class ExchangeQueueConfig {
     public static final String EXCHANGE_NAME = "demo_exchange";
     public static final String QUEUE_NAME = "demo_queue";
     public static final String ROUTING_KEY = "routing_key";
