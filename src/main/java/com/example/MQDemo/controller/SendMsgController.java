@@ -24,6 +24,6 @@ public class SendMsgController {
     @GetMapping(path = "/send/{message}")
     public void sendMsg(@PathVariable String message) {
         log.info("send msg: {}", message);
-        rabbitTemplate.convertAndSend(EXCHANGE_NAME+"asd", ROUTING_KEY, message.getBytes(), new CorrelationData(UUID.randomUUID().toString()));
+        rabbitTemplate.convertAndSend(EXCHANGE_NAME, ROUTING_KEY, message.getBytes(), new CorrelationData(UUID.randomUUID().toString()));
     }
 }
