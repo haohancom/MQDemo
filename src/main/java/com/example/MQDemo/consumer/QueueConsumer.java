@@ -6,12 +6,12 @@ import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
-import static com.example.MQDemo.config.ExchangeQueueConfig.QUEUE_NAME;
+import static com.example.MQDemo.config.ExchangeQueueConfig.MAIN_QUEUE_NAME;
 
 @Slf4j
 @Component
 public class QueueConsumer {
-    @RabbitListener(queues = QUEUE_NAME)
+    @RabbitListener(queues = MAIN_QUEUE_NAME)
     public void receive(Message message, Channel channel) {
        String msg = new String(message.getBody());
        log.info("received msg: {}", msg);
